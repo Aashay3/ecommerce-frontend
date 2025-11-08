@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — Melboch</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+  <main class="auth-page">
+    <div class="auth-container">
+      <div class="auth-box">
+        <h2>Welcome Back</h2>
+        <p class="auth-sub">Login to continue shopping with Melboch.</p>
+        <form id="loginForm">
+          <label>Email</label>
+          <input id="loginEmail" type="email" placeholder="you@example.com" required />
+
+          <label>Password</label>
+          <input id="loginPassword" type="password" placeholder="••••••••" required />
+
+          <button type="submit" class="auth-btn primary">Login</button>
+
+          <p class="auth-switch">Don’t have an account? 
+            <a href="signup.html">Sign up</a>
+          </p>
+        </form>
+        <p id="loginMsg" class="auth-msg"></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="scripts/auth.js"></script>
+</body>
+</html>

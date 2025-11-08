@@ -1,16 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce Frontend</title>
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Melboch</title>
+
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Online Store</h1>
-    </header>
+ <!-- ===== Navbar ===== -->
+<header class="mixtas-navbar">
+  <div class="container nav-flex">
+    <nav class="mixtas-menu">
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">Accessories</a>
+    </nav>
 
-    <script src="scripts/app.js"></script>
+    <a href="index.html" class="mixtas-logo">Melboch</a>
+
+    <div class="mixtas-icons">
+      <!-- Profile -->
+      <a href="#" id="profile-icon" class="profile-link">
+        <i class="fa-regular fa-user"></i>
+      </a>
+      <div id="profile-dropdown" class="profile-dropdown hidden">
+        <p id="user-greeting">Hi, Guest</p>
+        <button id="logout-btn" class="logout-btn hidden">Logout</button>
+      </div>
+
+      <a href="#"><i class="fa-regular fa-heart"></i></a>
+      <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+      <a href="cart.html" class="cart-icon">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span id="cart-count">0</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <!-- ===== Hero Banner ===== -->
+  <section class="hero-banner">
+    <img src="assets/Banner 3.jpg" alt="Hero" />
+    <div class="hero-overlay">
+      <p class="limited-text">LIMITED EDITION CAPSULE EXCLUSIVE</p>
+      <h1 class="hero-title">The Legacy Capsule</h1>
+      <button class="shop-btn" id="scrollToProducts">SHOP NOW</button>
+    </div>
+  </section>
+
+  <!-- ====== NEW IN SECTION ====== -->
+  <section class="new-in container">
+    <div class="section-header">
+      <div>
+        <h2>New In</h2>
+        <p>Upgrade your closet with everything trendy and new</p>
+      </div>
+      <a href="#" class="shop-new">Shop New Arrivals</a>
+    </div>
+
+    <div class="product-slider">
+      <button class="slide-btn left new-left"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="product-row" id="newProducts"></div>
+      <button class="slide-btn right new-right"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ===== Feature Banner ===== -->
+  <section class="feature-banner">
+    <img src="assets/Banner1.jpg" alt="Feature" />
+    <div class="feature-overlay">
+      <h2>SIGILISM MEN'S COLLECTION</h2>
+      <button class="shop-btn">Explore Now</button>
+    </div>
+  </section>
+
+  <!-- ===== Shop Limited Edition Section ===== -->
+  <section class="new-in container">
+    <div class="section-header">
+      <div>
+        <h2>Shop Limited Edition </h2>
+        <p>Curated pieces from the Legacy Capsule</p>
+      </div>
+      <a href="#" class="shop-new">View All</a>
+    </div>
+
+    <div class="product-slider">
+      <button class="slide-btn left nate-left"><i class="fa-solid fa-chevron-left"></i></button>
+      <div class="product-row" id="nateProducts"></div>
+      <button class="slide-btn right nate-right"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Melboch</p>
+    </div>
+  </footer>
+
+  <!-- ===== JS ===== -->
+  <script src="scripts/app.js"></script>
 </body>
 </html>

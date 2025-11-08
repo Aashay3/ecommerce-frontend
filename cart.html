@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart — Melboch</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+  <header class="mixtas-navbar scrolled">
+    <div class="container nav-flex">
+      <a href="index.html" class="mixtas-logo">Melboch</a>
+      <div class="mixtas-icons">
+        <a href="index.html" class="back-link">
+          <i class="fa-solid fa-arrow-left"></i> Continue Shopping
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== CART SECTION ===== -->
+  <main class="cart-page container" style="padding-top:140px;">
+    <section class="cart-grid">
+      
+      <!-- Cart Items -->
+      <div class="cart-items-box">
+        <h2>Your Cart</h2>
+        <div id="cart-items" class="cart-items"></div>
+      </div>
+
+      <!-- Cart Summary -->
+      <aside class="cart-summary-box">
+        <h3>Order Summary</h3>
+        <div class="summary-detail">
+          <p>Subtotal</p>
+          <p>Rs.<span id="cart-total">0.00</span></p>
+        </div>
+        <div class="summary-detail">
+          <p>Shipping</p>
+          <p>Free</p>
+        </div>
+        <hr>
+        <div class="summary-total">
+          <p>Total</p>
+          <p>Rs.<span id="cart-total-final">0.00</span></p>
+        </div>
+        <button id="checkoutBtn" class="checkout-btn">Proceed to Checkout</button>
+      </aside>
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"><p>© 2025 Melboch</p></div>
+  </footer>
+
+  <!-- ===== JS ===== -->
+  <script src="scripts/app.js"></script>
+</body>
+</html>
